@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6edeb;
+    padding-top: 70px; /* adjust based on navbar height */
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; /* vertically center content */
+    background-color: rgb(216, 242, 245); /* light background color */
+    font-family: Poppins, sans-serif;
+    position: fixed;
+    top: 0;             /* stick to top */
+    left: 0;            /* align from left edge */
+    width: 100%;
+    z-index: 100;
+}
+
+.logo{
+    padding-left: 20px;
+    height: 70px;
+}
+
+.right-section {
+    display: flex;              /* arrange in one line */
+    justify-content: flex-end;  /* push items to the right */
+    align-items: center;        /* vertically center */                /* space between items */
+}
+
+.back{
+    background-color: white;
+    color: rgb(17, 184, 184);
+    font-family: Poppins, sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid rgb(17, 184, 184);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.back a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.user-profile{
+    background-color: rgb(167, 89, 239);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.task-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.task-area-1,
+.task-area-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+.todo-tasks,
+.timetable,
+.notes,
+.quote-section {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 300px;  
+    max-height: 300px; 
+    overflow-y: auto; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}
+
+.todo-tasks p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.task-enter, .date-enter{
+    font-size: 16px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+    margin-right: 5px;
+}
+
+.task-enter:focus{
+    border: 2px solid rgb(35, 108, 218);
+    box-shadow: 0 0 0 6px rgba(35,108,218,0.10);
+}
+
+.add-task{
+    height: 38px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(8, 203, 8);
+    width: 65px;
+    font-size: 16px;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn{
+    height: 30px;
+    padding: 4px 15px;
+    border: none;
+    background-color: rgb(66, 146, 217);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.task-list li {
+    margin-bottom: 5px;
+    padding: 8px;
+    border-bottom: 1px solid #eee; 
+    list-style: none; 
+}
+
+.timetable p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#daySelector{
+    font-size: 16px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#showAddForm{
+    background-color: white;
+    color: rgb(151, 17, 184);
+    font-family: Poppins, sans-serif;
+    padding: 8px 16px;
+    font-size: 18px;
+    border: 2px solid rgb(151, 17, 184);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#day-name, #time-name, #subject-name{
+    font-size: 20px;
+}
+
+#dayInput, #timeInput, #subjectInput{
+    font-size: 16px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+    margin-right: 5px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
+
+#addSchedule{
+    height: 35px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(8, 203, 8);
+    width: 20%;
+    font-size: 16px;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#timetableDisplay ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+}
+
+#timetableDisplay li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+#timetableDisplay li:last-child {
+    border-bottom: none; 
+}
+
+.delete-schedule {
+    background-color: rgb(179, 178, 178);
+    border: none;
+    border-radius: 8px;
+    font-size: 8px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.notesInput{
+    height: 125px;
+    width: 90%;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgb(234, 212, 72);
+    outline: none;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.notes{
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+.notesInput:focus{
+    border: 2px solid rgb(234, 212, 72);
+    box-shadow: 0 0 0 6px rgba(228, 172, 5, 0.1);
+}
+
+.add-notes{
+    height: 38px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(8, 203, 8);
+    width: 20%;
+    font-size: 16px;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.see-notes{
+    height: 38px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(66, 146, 217);
+    width: 20%;
+    font-size: 16px;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quote-section p{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#new-quote{
+    height: 38px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(8, 203, 8);
+    width: 20%;
+    font-size: 16px;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}

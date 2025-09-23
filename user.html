@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            <img src = "Images/EDU TrackR.PNG" alt = "Edu Trackr" class = "logo">
+        </div>
+        <div class="right-section">
+            <button class = "back">
+                <a href = "home.html">Back To Home</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="user-profile">
+        <h1>Welcome User</h1>
+    </div>
+
+    <div class="task-section">
+        <div class="task-area-1">
+            <div class="todo-tasks">
+                <p>Tasks To Do</p>
+                <input type = "text" placeholder="Enter Task" class = "task-enter">
+                <input type="date" class = "date-enter">
+                <button class="add-task">Add</button>
+                <ul class="task-list"></ul>
+            </div>
+            <div class="timetable">
+                <p>Time Table</p>
+                <div class="timetable-header">
+                    <select id="daySelector">
+                    <option value="">Select Day</option>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                    <option>Sunday</option>
+                    </select>
+                    <button id="showAddForm">➕ Add</button>
+                </div>
+
+                <!-- Timetable display -->
+                <!-- Timetable display -->
+                <div id="timetableDisplay"></div>
+
+
+                <!-- Hidden Add Form (will show when clicking Add button) -->
+                <div id="addForm" style="display:none; margin-top:15px;">
+                    <label id = "day-name">
+                    Day:
+                    <select id="dayInput">
+                        <option value="">Select Day</option>
+                        <option>Monday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+                        <option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+                        <option>Sunday</option>
+                    </select>
+                    </label>
+
+                    <label id="subject-name">
+                        Subject:
+                        <input type="text" id="subjectInput" placeholder="Enter subject">
+                    </label>
+
+                    <label id="time-name">
+                    Time:
+                    <input type="time" id="timeInput">
+                    </label>
+
+                    <button id="addSchedule">Add to Schedule</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="task-area-2">
+            <div class="notes">
+                <p>Notes</p>
+                <textarea class="notesInput"></textarea>
+                <button class="add-notes">Add to Notes</button>
+                <button class="see-notes">See All Notes</button>
+            </div>
+            <div class="quote-section">
+                <p>Motivation Section</p>
+                <p id="quote-text">Loading quote...</p>
+                <button id="new-quote">New Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="user-script.js"></script>
+</body>
+</html>

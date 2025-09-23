@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6edeb;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center; 
+    background-color: rgb(216, 242, 245); 
+    font-family: Poppins, sans-serif;
+    position: fixed;
+    top: 0;           
+    left: 0;          
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    padding-left: 20px;
+    height: 70px;
+}
+
+.right-section {
+    display: flex;          
+    justify-content: center; 
+    align-items: center; 
+    gap: 25px;  
+}
+
+.nav-item{
+    color: #222a68;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-button {
+    background-color: white;
+    color: rgb(17, 184, 184);
+    font-family: Poppins, sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid rgb(17, 184, 184);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.nav-button a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.study-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.study-page h1 {
+    text-align: center;
+    color: #4b0082;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.study-page section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.study-page section h2 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.study-page section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.study-page ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.study-page ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}

@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f6edeb;;
+}
+
+.notes-title{
+    font-size: 36px;
+    margin: 20px;
+}
+.notes-section{
+    background-color: white;
+    min-height: 300px;
+    width: 95vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    overflow-y: auto; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#notes-shown{
+    font-size: 20px;
+}
+
+.notes-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.note-item {
+    display: flex;
+    justify-content: space-between; /* pushes text left & delete button right */
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* line between notes */
+}
+
+.note-item:last-child {
+    border-bottom: none; /* remove line after last note */
+}
+
+.note-text {
+    font-size: 18px;
+    flex: 1; /* makes text take available space */
+}
+
+.delete-note {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
