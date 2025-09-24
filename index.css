@@ -1,17 +1,12 @@
 body {
     margin: 0;
-<<<<<<< HEAD
     padding-top: 70px;
-=======
-    padding: 0;
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 
 .navbar {
     display: grid;
-<<<<<<< HEAD
     grid-template-columns: 2fr 1fr;
     align-items: center;
     background-color: rgb(216, 242, 245);
@@ -19,40 +14,22 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-=======
-    grid-template-columns: 2fr 1fr; 
-    align-items: center; 
-    background-color: rgb(216, 242, 245);
-    font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
-    top: 0;     
-    left: 0;         
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     width: 100%;
     z-index: 100;
 }
 
-<<<<<<< HEAD
 .nav-item {
-=======
-.nav-item{
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     color: #222a68;
     cursor: pointer;
     text-decoration: none;
 }
 
-<<<<<<< HEAD
 .logo {
-=======
-.logo{
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     padding-left: 20px;
     height: 70px;
 }
 
 .right-section {
-<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,15 +37,6 @@ body {
 }
 
 .sign-up {
-=======
-    display: flex;          
-    justify-content: center; 
-    align-items: center; 
-    gap: 25px;  
-}
-
-.sign-up{
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     background-color: rgb(17, 184, 184);
     color: white;
     font-family: Poppins, sans-serif;
@@ -82,13 +50,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
-<<<<<<< HEAD
 .sign-up:hover {
     background-color: rgba(17, 184, 184, 0.8);
-=======
-.sign-up:hover{
-    background-color: rgb(17, 184, 184, 0.8);
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
 }
 
 .sign-up a {
@@ -96,7 +59,6 @@ body {
     color: inherit;
 }
 
-<<<<<<< HEAD
 .hamburger {
   display: none;
   font-size: 28px;
@@ -118,56 +80,26 @@ body {
 .image-app img {
     width: 100%;
     height: 100vh;
-=======
-.container {
-    display: grid;
-    grid-template-columns: 2fr 1fr; 
-    align-items: center;
-    width: 100%;
-    margin-top: 70px;
-    background-color: rgb(230, 247, 247);
-    box-shadow: inset 0 0 80px rgb(237, 241, 241);
-}
-
-.image-app img {
-    width: 100%;  
-    height: 100vh; 
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     display: block;
     border-radius: 8px;
 }
 
-<<<<<<< HEAD
 .about-app {
-=======
-.about-app{
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-left: 10px;
-<<<<<<< HEAD
 }
 
 .about-line {
     font-size: 90px;
     color: rgb(4, 126, 240);
     font-family: "Montserrat", sans-serif;
-=======
-    
-}
-
-.about-line{
-    font-size: 90px;
-    color: rgb(4, 126, 240);
-    font-family: "Montserrat", sans-serif; 
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     font-weight: 600;
     margin: 0px;
 }
 
-<<<<<<< HEAD
 .about-baseline {
     font-size: 36px;
     font-family: "Montserrat", sans-serif;
@@ -175,54 +107,29 @@ body {
 }
 
 .plan-button {
-=======
-.about-baseline{
-    font-size: 36px;
-    font-family: "Montserrat", sans-serif; 
-    font-weight: 600;
-}
-
-.plan-button{
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     background-color: rgb(17, 184, 184);
     color: white;
     font-family: Poppins, sans-serif;
     padding: 15px 25px;
     font-size: 30px;
     border: none;
-<<<<<<< HEAD
     border-radius: 10px;
-=======
-    border-radius: 5px;
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-<<<<<<< HEAD
 .plan-button a {
-=======
-.plan-button a{
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     text-decoration: none;
     color: inherit;
 }
 
-<<<<<<< HEAD
 .plan-button:hover {
     background-color: rgba(17, 184, 184, 0.8);
 }
 
 .feature-line {
-=======
-.plan-button:hover{
-    background-color: rgb(17, 184, 184, 0.8);
-}
-
-.feature-line{
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,7 +138,6 @@ body {
     box-shadow: inset 0 0 80px #fbf9fb;
 }
 
-<<<<<<< HEAD
 .feature-line p {
     font-size: 50px;
     color: #a30aa5;
@@ -247,33 +153,13 @@ body {
     padding: 60px 40px;
     margin-top: 50px;
     background-color: #ffffff;
-=======
-.feature-line p{
-    font-size: 50px;
-    color: #a30aa5;
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif; 
-}
-
-.task-feature, .notes-feature {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px; 
-    padding: 60px 40px;
-    margin-top: 50px;
-    background-color: #ffffff; 
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease-in-out;
 }
 
-<<<<<<< HEAD
 .time-feature,
 .motivation-feature {
-=======
-.time-feature, .motivation-feature {
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 40px;
@@ -285,7 +171,6 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-<<<<<<< HEAD
 .about-tasks,
 .about-notes,
 .about-time,
@@ -310,29 +195,11 @@ body {
 .time-img,
 .notes-img,
 .motivation-img {
-=======
-.about-tasks, .about-notes, .about-time, .about-motivation {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
-    flex-direction: column;
-}
-
-.about-tasks p, .about-notes p, .about-time p, .about-motivation p {
-    text-align: left;
-    font-size: 18px; 
-    width: 100%; 
-    line-height: 1.6;
-}
-
-.task-img, .time-img, .notes-img, .motivation-img {
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-<<<<<<< HEAD
 .task-img img,
 .time-img img,
 .notes-img img,
@@ -670,38 +537,3 @@ body {
     font-size: 16px;
   }
 }
-=======
-.task-img img, .time-img img, .notes-img img, .motivation-img img {
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
-    transition: transform 0.3s ease-in-out; 
-}
-
-.task-feature:hover, .time-feature:hover, .notes-feature:hover, .motivation-feature:hover {
-    transform: translateY(-8px); 
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); 
-}
-
-.task-img img:hover, .time-img img:hover, .notes-img img:hover, .motivation-img img:hover {
-    transform: translateY(-8px); 
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); 
-}
-
-
-.about-tasks span, .about-notes span, .about-time span, .about-motivation span {
-    font-weight: 700; 
-    font-size: 20px;
-    color: #668cff; 
-    margin-right: 5px; 
-}
-
-.task-feature .about-tasks span, .motivation-feature .about-motivation span {
-    color: #668cff; 
-}
-
-.time-feature .about-time span, .notes-feature .about-notes span {
-    color: #99ff99; 
-}
->>>>>>> b1a9b3ee8383bb7cddecee146fc6ef177f36c1c3
