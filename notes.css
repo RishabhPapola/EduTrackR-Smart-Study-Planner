@@ -31,19 +31,19 @@ body{
 
 .note-item {
     display: flex;
-    justify-content: space-between; /* pushes text left & delete button right */
+    justify-content: space-between; 
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ddd; /* line between notes */
+    border-bottom: 1px solid #ddd; 
 }
 
 .note-item:last-child {
-    border-bottom: none; /* remove line after last note */
+    border-bottom: none; 
 }
 
 .note-text {
     font-size: 18px;
-    flex: 1; /* makes text take available space */
+    flex: 1; 
 }
 
 .delete-note {

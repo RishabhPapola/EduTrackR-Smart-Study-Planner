@@ -281,3 +281,92 @@ body {
     margin-right: 5px;
     cursor: pointer;
 }
+
+@media (max-width: 1000px) {
+    .task-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 95%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .task-area-1,
+    .task-area-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .todo-tasks,
+    .timetable,
+    .notes,
+    .quote-section {
+        width: 100%;
+        max-width: 700px;
+        min-height: 450px;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .todo-tasks p,
+    .timetable p,
+    .notes p,
+    .quote-section p {
+        text-align: center;
+    }
+
+    .task-enter,
+    .date-enter,
+    #daySelector,
+    #dayInput,
+    #timeInput,
+    #subjectInput,
+    .notesInput {
+        width: 95%;
+        max-width: 500px;
+        margin: 5px auto;
+        display: block;
+        padding: 12px;
+    }
+
+    .add-task,
+    #showAddForm,
+    #addSchedule,
+    .add-notes,
+    .see-notes,
+    #new-quote {
+        width: 200px;
+        max-width: 90%;
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+
+    #addForm {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #day-name,
+    #time-name,
+    #subject-name {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .notesInput {
+        height: 150px;
+    }
+
+    .task-list li,
+    #timetableDisplay li {
+        font-size: 14px;
+    }
+}

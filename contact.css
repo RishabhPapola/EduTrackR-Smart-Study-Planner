@@ -23,6 +23,13 @@ body {
     height: 70px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    justify-self: end;
+}
+
 .right-section {
     display: flex;          
     justify-content: center; 
@@ -120,4 +127,28 @@ body {
 
 .contact-form button:hover {
     background-color: rgb(6, 163, 6);
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .right-section.active {
+    display: flex;
+    flex-direction: column;
+    background: rgb(216, 242, 245);
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    width: 220px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
 }

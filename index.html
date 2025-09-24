@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="home.css">
+    <title>EduTrackR - A Smart Study Planner</title>
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,6 +18,9 @@
         <div class="left-section">
             <img src = "Images/EDU TrackR.PNG" alt = "Edu Trackr" class = "logo">
         </div>
+        <div class="hamburger" onclick="document.querySelector('.right-section').classList.toggle('active')">
+            ☰
+        </div>
         <div class="right-section">
             <a href = "howtostudy.html" class = "nav-item">How To Study</a>
             <a href = "contact.html" class = "nav-item">Contact</a>
@@ -27,6 +30,9 @@
             </button>
         </div>
     </div>
+
+    
+
     <div class="container">
         <div class="about-app">
             <p class = "about-line">The smarter way to plan and achieve.</p>

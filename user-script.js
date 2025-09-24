@@ -233,7 +233,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "Start where you are. Use what you have. Do what you can."
     ];
 
-    // Initialize localStorage only once
     if (!localStorage.getItem("quotes")) {
         localStorage.setItem("quotes", JSON.stringify(initialQuotes));
     }
@@ -241,10 +240,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let quotes = JSON.parse(localStorage.getItem("quotes")) || [];
     let availableQuotes = [...quotes];
 
-    // Function to get random quotes (5 at a time)
     function getRandomQuotes(count = 5) {
         if (availableQuotes.length < count) {
-            availableQuotes = [...quotes]; // Reset when not enough left
+            availableQuotes = [...quotes];
         }
 
         const selected = [];
